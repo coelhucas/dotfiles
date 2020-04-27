@@ -1,0 +1,7 @@
+A
+B
+[user]
+    name = Lucas Coelho
+    email = lucascoelhodacosta@gmail.com
+[pull]
+    rebase = true

@@ -1,0 +1,18 @@
+DOTFILES=$HOME/dotfiles
+
+source $DOTFILES/antigen/antigen.zsh
+
+# Load oh-my-zsh
+antigen use oh-my-zsh
+
+# Bundles
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle lukechilds/zsh-nvm
+antigen bundle npm
+
+# Load default theme
+antigen theme robbyrussell
+
+# Apply changes
+antigen apply
