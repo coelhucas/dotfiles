@@ -1,0 +1,8 @@
+super + x
+	maim -s -u | xclip -selection clipboard -t image/png -i
+
+super + t
+	~/Telegram/Telegram
+
+super + d
+	discord

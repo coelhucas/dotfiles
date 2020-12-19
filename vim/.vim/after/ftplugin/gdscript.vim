@@ -1,5 +1,5 @@
 " to use folding provided by plugin
-setlocal foldmethod=expr
+" setlocal foldmethod=expr
 setlocal tabstop=4
 nnoremap <buffer> <F4> :GodotRunLast<CR>
 nnoremap <buffer> <F5> :GodotRun<CR>
