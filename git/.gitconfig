@@ -1,5 +1,7 @@
 [user]
     name = Lucas Coelho
     email = lucascoelhodacosta@gmail.com
+[github]
+    user = coelhucas
 [pull]
     rebase = true
