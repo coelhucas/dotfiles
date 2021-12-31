@@ -5,3 +5,5 @@
     user = coelhucas
 [pull]
     rebase = true
+[core]
+	editor = vim
