@@ -6,4 +6,9 @@
 [pull]
     rebase = true
 [core]
-	editor = vim
+	editor = nvim
+    excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true

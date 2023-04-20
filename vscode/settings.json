@@ -1,25 +1,38 @@
 {
-    "workbench.colorTheme": "GitHub Dark Default",
-    "editor.lineNumbers": "relative",
-    "editor.tabSize": 2,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "git.autofetch": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  // "godot_tools.gdscript_lsp_server_port": 6005,
+  "godot_tools.editor_path": "/Applications/Godot.app/Contents/MacOS/Godot",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.accessibilitySupport": "on",
+  "editor.lineNumbers": "relative",
+  "audioCues.lineHasError": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.lineHasWarning": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "editor.trimAutoWhitespace": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "eslint.validate": [
-        "javascript"
-    ],
-    "editor.inlineSuggest.enabled": true,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": false,
-        "markdown": false,
-        "javascript": false
-    },
-    "svelte.enable-ts-plugin": true
+      "source.fixAll": true
+    }
+  },
+  "[gdscript]": {
+    "editor.tabSize": 4,
+    // Insert spaces when pressing Tab.
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "window.zoomLevel": -1
 }
-
