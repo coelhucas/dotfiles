@@ -1,17 +1,26 @@
-#!/bin/sh
+#!/bin/bash
 
-# Update repo
-echo 'Fetch packages'
-sudo apt-get update
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	# install vimplug
+	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+      		 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# Install ZSH
-echo 'Installing ZSH...'
-sudo apt-get install zsh
+	# install zsh
+        sudo apt install zsh
+	chsh -s $(which zsh)
+fi
 
-# Change default shell
-echo 'Changing default shell to zsh...'
-sudo chsh -s $(which zsh) $USER
+# TODO: for macOS
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install git
-echo 'Installing Git...'
-sudo apt-get install git
+
+
+# install zsh | TODO: check if zsh was proper installed
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# symlinks
+ln -s ~/projects/dotfiles/.config ~
+ln -s ~/projects/dotfiles/zsh/.zshrc ~ 
+
+
