@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
-let g:netrw_dirhist_5='/home/lucas/.vim'
-let g:netrw_dirhist_4='/home/lucas/.vim/plugin'
-let g:netrw_dirhist_3='/home/lucas/.vim/after/ftplugin'
-let g:netrw_dirhist_2='/home/lucas/.vim/after'
-let g:netrw_dirhist_1='/home/lucas/.vim'
